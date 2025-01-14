@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="music.css">
+        <script src="https://kit.fontawesome.com/4c568adb41.js" crossorigin="anonymous"></script>
+    </head>
+   <body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        <img src="./despacito.jpg"   class="song-img">       
+        <h1>
+            Despacito
+        </h1>
+        <p>Luis Fonsi Ft Puerto Rican</p>
+        <audio id="song">
+            <source src="playlist/despacito.mp3" type="audio/mpeg">
+        </audio>
+        <input type="range" value="0" id="progress">
+
+        <div class="controls">
+            <div ><i class="fa-solid fa-backward"></i></div>
+            <div onclick="playPause()"><i class="fa-solid fa-play" id="crtlIcon"></i></div>
+            <div ><i class="fa-solid fa-forward"></i></div>
+            
+        </div>
+        </div>
+    </div>
+    <script src="musaic.js"></script>
+   </body>
+</html> 
